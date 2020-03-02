@@ -1,0 +1,5 @@
+{% autoescape off %}
+Hi{% if user.username %} {{ user.username }}{% endif %},
+Please click on the link to confirm your registration,
+{{ scheme }}://{{ domain }}{{ activation_url }}
+{% endautoescape %}
