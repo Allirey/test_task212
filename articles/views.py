@@ -77,8 +77,4 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
 
         if form.instance.author.has_perm('articles.publish_without_moderation'):
             form.instance.status = Article.Status.PUBLISHED
-            print('hmmm')
-            print(form.instance.author.has_perm('articles.publish_without_moderation'))
-            print([p for p in form.instance.author.user_permissions.all()])
-
         return super().form_valid(form)
