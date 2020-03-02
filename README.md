@@ -4,8 +4,6 @@ Simple newspaper web application built with Django
 # To run locally
 Register at [Sendgrid](https://sendgrid.com/) and get your API key ([details](https://app.sendgrid.com/guide/integrate/langs/smtp))
 
-Set up [broker](https://docs.celeryproject.org/en/latest/getting-started/brokers/) you like for celery to use
-
 Configure required environment variables:
 + EMAIL_HOST_PASSWORD (get via sendgrid)
 
