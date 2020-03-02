@@ -1,0 +1,8 @@
+*
+!test_task
+!articles
+!templates
+!users
+!init.sql
+!manage.py
+!requirements.txt
