@@ -26,7 +26,6 @@ class SignUpView(CreateView):
         domain = get_current_site(self.request).domain
 
         test = get_user_model().objects.get(pk=user.id)
-        print('SYSHESTVYE', test)
 
         send_verification_email.delay(user.id, scheme, domain)
         return valid
